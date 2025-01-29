@@ -19,5 +19,5 @@ The sum of te first 10 integers is shown.
 The expected result is 55.
 
 
-The Pyhton problem can be executed on Google Colab, after having uploaded the data file (file2_Groups_AGN-wWU_500Mpc_Data) in the current working environment.
+The Pyhton problem (sufficiently commented) can be executed on Google Colab, after having uploaded the data file (file2_Groups_AGN-wWU_500Mpc_Data) in the current working environment.
 The 6 requested graphs are shown at the end of the execution.
