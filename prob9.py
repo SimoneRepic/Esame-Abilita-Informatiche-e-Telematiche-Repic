@@ -142,7 +142,7 @@ plt.tight_layout(pad=1.0)
 fig.suptitle('Question 4', y=1.05)
 
 # Legend settings
-plt.legend(*sc.legend_elements("sizes", num=5), labelspacing = 2, borderpad = 1.3, handletextpad = 1, title='Stellar Mass ($2 \cdot 10^{12}M_{\odot}$/h) ', frameon = False, bbox_to_anchor=(0, 1.2))
+plt.legend(*sc.legend_elements("sizes", num=5), labelspacing = 2, borderpad = 1.3, handletextpad = 1, title='Stellar Mass ($10^{10}M_{\odot}$/h) ', frameon = False, bbox_to_anchor=(0, 1.2))
 
 plt.show()
 
