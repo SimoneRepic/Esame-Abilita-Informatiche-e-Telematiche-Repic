@@ -86,19 +86,18 @@ plt.show()
 
 # Question 3
 
-# Here the most massive structure is excluded, since it is a stand-alone, far away from all the other data
-
 # Compute mean of dark matter mass distribution
-mean = np.sum(newdm)/len(newdm)
+mean = np.sum(dm)/len(dm)
 
 # Sort dark matter array in ascending order
-sortdm = np.sort(newdm)
+sortdm = np.sort(dm)
 
-# Compute index of median-to-be element (len(newdm) is odd)
-n = int((len(newdm) + 1)/2)
+# Compute indexes of median-to-be elements (len(dm) is even)
+n = int(len(dm)/2)
+m = int(len(dm)/2 + 1)
 
 # Compute median of dark matter mass distribution
-median = sortdm[n]
+median = (sortdm[n] + sortdm[m])/2
 
 # Plot histogram of dark matter mass together with mean and median
 plt.hist(dm, bins=50, range=(0,1.4), label='Data')
@@ -108,6 +107,18 @@ plt.axvline(x = mean, color='red', linestyle='dashed', linewidth=1, label=f'Mean
 plt.axvline(x = median, color='orange', linestyle='dashed', linewidth=1, label=f'Median = ${median:.2f}$')
 plt.legend()
 plt.title('Question 3')
+plt.show()
+
+# Here the most massive structure is excluded, since it is a stand-alone, far away from all the other data
+
+# Plot histogram of dark matter mass together with mean and median
+plt.hist(dm, bins=50, range=(0,1.4), label='Data')
+plt.xlabel('Dark Matter Mass ($10^{10}M_{\odot}$/h)')
+plt.ylabel('Frequency')
+plt.axvline(x = mean, color='red', linestyle='dashed', linewidth=1, label=f'Mean = ${mean:.2f}$')
+plt.axvline(x = median, color='orange', linestyle='dashed', linewidth=1, label=f'Median = ${median:.2f}$')
+plt.legend()
+plt.title('Question 3 (zoom)')
 plt.show()
 
 # Question 4
